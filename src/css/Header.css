@@ -13,9 +13,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
-  letter-spacing: 0.5em;
-  cursor: pointer;
+.header__logo {
+  height: 1vw;
+  margin: 5px;
 }
 
 ul {

@@ -1,15 +1,16 @@
 import React from 'react'
 import '../css/App.css'
 
-import ProductItem from './ProductItem'
-
 import Header from './Header'
+import ProductItem from './ProductItem'
+import Sidebar from './Sidebar'
 
 function App() {
   return (
     <div>
+      <Sidebar />
       <Header />
-      <div className='items'>
+      <div className='productItems'>
         <ProductItem
           title='Lowest Cost Solar Panels in America'
           subtitle='Money-back guarantee'

@@ -1,10 +1,22 @@
 import React from 'react'
 import '../css/Header.css'
 
+import { useDispatch } from 'react-redux'
+
 const Header = () => {
+  const dispatch = useDispatch()
+
+  const clickHandler = () => {
+    dispatch({ type: 'ACTIVATE_SIDEBAR', payload: true })
+  }
+
   return (
     <div className='header'>
-      <h3>TESLA</h3>
+      <img
+        src='/public/images/tesla.png'
+        alt='tesla'
+        className='header__logo'
+      />
       <ul className='header__products'>
         <li>MODEL S</li>
         <li>MODEL 3</li>
@@ -20,6 +32,7 @@ const Header = () => {
           src='/public/images/menu.png'
           alt='Menu Bar'
           className='header__menuImg'
+          onClick={clickHandler}
         />
       </ul>
     </div>
