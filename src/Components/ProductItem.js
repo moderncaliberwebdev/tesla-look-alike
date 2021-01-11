@@ -19,11 +19,6 @@ const ProductItem = ({
         backgroundColor: image === 'charger.jpg' && '#f7f7f7',
       }}
     >
-      <div className='productItem__title'>
-        <h2>{title}</h2>
-        <h4>{subtitle}</h4>
-      </div>
-
       <div className='productItem__buttons'>
         <button className='productItem__buttons_primary'>
           {buttonPrimary}
@@ -33,6 +28,10 @@ const ProductItem = ({
             {buttonSecondary}
           </button>
         )}
+      </div>
+      <div className='productItem__title'>
+        <h2>{title}</h2>
+        <h4>{subtitle}</h4>
       </div>
     </div>
   )
