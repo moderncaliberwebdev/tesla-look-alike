@@ -6,7 +6,6 @@ const Sidebar = () => {
   const dispatch = useDispatch()
 
   const activateSidebar = useSelector((state) => state.activateSidebar)
-  console.log(activateSidebar.open)
 
   const closeHandler = () => {
     dispatch({ type: 'ACTIVATE_SIDEBAR', payload: false })
@@ -19,13 +18,27 @@ const Sidebar = () => {
   return (
     <div
       className='sidebar'
-      style={{ width: activateSidebar.open ? '20vw' : '0' }}
+      style={{
+        width: activateSidebar.open
+          ? window.matchMedia('(max-width: 1200px)').matches
+            ? '85vw'
+            : '20vw'
+          : '0',
+      }}
     >
       <p className='sidebar__close' onClick={closeHandler}>
         X
       </p>
       <ul>
-        <li>EXISING INVENTORY</li>
+        <li className='sidebar__mobile'>MODEL S</li>
+        <li className='sidebar__mobile'>MODEL X</li>
+        <li className='sidebar__mobile'>MODEL 3</li>
+        <li className='sidebar__mobile'>MODEL Y</li>
+        <li className='sidebar__mobile'>SOLAR ROOF</li>
+        <li className='sidebar__mobile'>SOLAR PANELS</li>
+        <li className='sidebar__mobile'>SHOP</li>
+        <li className='sidebar__mobile'>TESLA ACCOUNT</li>
+        <li>EXISTING INVENTORY</li>
         <li>USED INVENTORY</li>
         <li>TRADE-IN</li>
         <li>CYBERTRUCK</li>

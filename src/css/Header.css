@@ -35,3 +35,19 @@ li {
   margin: 5px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 1200px) {
+  .header__logo {
+    height: 3vw;
+    margin: 4vw;
+  }
+  .header__products {
+    display: none;
+  }
+  .header__options__account {
+    display: none;
+  }
+  .header__menuImg {
+    height: 6vw;
+  }
+}

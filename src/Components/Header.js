@@ -26,8 +26,8 @@ const Header = () => {
         <li>SOLAR PANELS</li>
       </ul>
       <ul className='header__options'>
-        <li>SHOP</li>
-        <li>TESLA ACCOUNT</li>
+        <li className='header__options__account'>SHOP</li>
+        <li className='header__options__account'>TESLA ACCOUNT</li>
         <img
           src='/public/images/menu.png'
           alt='Menu Bar'
