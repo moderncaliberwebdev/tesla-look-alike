@@ -22,26 +22,26 @@
 h2 {
   color: #323439;
   font-weight: 200;
-  font-size: 3vw;
+  font-size: clamp(20px, 35px, 45px);
 }
 
 h4 {
   color: #636770;
   font-weight: 200;
-  font-size: 1vw;
+  font-size: clamp(10px, 15px, 25px);
   margin: 0.5vw;
 }
 
 .productItem__buttons {
   position: relative;
-  top: 70%;
+  top: 70vh;
 }
 
 button {
   margin: 1vw;
-  width: 20vw;
+  width: 300px;
   opacity: 0.6;
-  padding: 1vw;
+  padding: 15px 60px;
   border-style: none;
   border-radius: 20px;
   cursor: pointer;
@@ -56,24 +56,25 @@ button {
   background-color: #fff;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 700px) {
   h2 {
-    font-size: 8vw;
+    /* font-size: 8vw; */
     margin: 0 10vw 0;
   }
 
   h4 {
-    font-size: 4vw;
+    /* font-size: 4vw; */
     margin: 0.5vw;
   }
+}
 
+@media only screen and (max-width: 600px) {
   .productItem__buttons {
-    top: 70%;
+    top: 55vh;
   }
 
   button {
     margin: 2vw;
     width: 90vw;
-    padding: 4vw;
   }
 }

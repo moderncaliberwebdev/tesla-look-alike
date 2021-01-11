@@ -33,7 +33,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
   .sidebar__close {
     position: relative;
     margin: 1vw 1vw 5vh 1vw;

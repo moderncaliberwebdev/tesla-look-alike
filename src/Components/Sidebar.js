@@ -20,7 +20,7 @@ const Sidebar = () => {
       className='sidebar'
       style={{
         width: activateSidebar.open
-          ? window.matchMedia('(max-width: 1200px)').matches
+          ? window.matchMedia('(max-width: 600px)').matches
             ? '85vw'
             : '20vw'
           : '0',

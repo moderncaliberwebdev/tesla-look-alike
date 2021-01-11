@@ -36,7 +36,7 @@ li {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 700px) {
   .header__logo {
     height: 3vw;
     margin: 4vw;
