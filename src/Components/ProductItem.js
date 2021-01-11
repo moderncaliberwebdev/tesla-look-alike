@@ -14,7 +14,7 @@ const ProductItem = ({
       className='productItem'
       id='productItem'
       style={{
-        backgroundImage: `url("/public/images/${image}")`,
+        backgroundImage: `url("public/images/${image}")`,
         backgroundSize: image === 'charger.jpg' ? '50%' : 'cover',
         backgroundColor: image === 'charger.jpg' && '#f7f7f7',
       }}

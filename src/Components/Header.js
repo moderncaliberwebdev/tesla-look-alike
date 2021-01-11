@@ -12,11 +12,7 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <img
-        src='/public/images/tesla.png'
-        alt='tesla'
-        className='header__logo'
-      />
+      <img src='public/images/tesla.png' alt='tesla' className='header__logo' />
       <ul className='header__products'>
         <li>MODEL S</li>
         <li>MODEL 3</li>
@@ -29,7 +25,7 @@ const Header = () => {
         <li className='header__options__account'>SHOP</li>
         <li className='header__options__account'>TESLA ACCOUNT</li>
         <img
-          src='/public/images/menu.png'
+          src='public/images/menu.png'
           alt='Menu Bar'
           className='header__menuImg'
           onClick={clickHandler}
